@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen flex items-center justify-center">
+  <div class="p-6 bg-white rounded-lg shadow-lg max-w-md w-full">
+    <h1 class="text-2xl font-bold mb-4 text-center">Temperature Converter</h1>
+    
+    <!-- Input Section -->
+    <div class="mb-4">
+      <label for="tempInput" class="block text-lg font-medium mb-2">Enter Temperature:</label>
+      <input 
+        id="tempInput" 
+        type="number" 
+        placeholder="Enter value" 
+        class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+    </div>
+
+    <!-- Select Conversion -->
+    <div class="mb-4">
+      <label for="convertFrom" class="block text-lg font-medium mb-2">Convert From:</label>
+      <select 
+        id="convertFrom" 
+        class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label for="convertTo" class="block text-lg font-medium mb-2">Convert To:</label>
+      <select 
+        id="convertTo" 
+        class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+      >
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+
+    <!-- Convert Button -->
+    <div class="mb-4">
+      <button 
+        id="convertButton" 
+        class="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+      >
+        Convert
+      </button>
+    </div>
+
+    <!-- Output Section -->
+    <div id="result" class="text-lg font-medium text-center"></div>
+  </div>
+</body>
+</html>
